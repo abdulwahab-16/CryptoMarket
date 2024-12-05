@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\CryptoMarket\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EDC40BF9-4112-4141-889F-C60C23F40D9F}|RealEstate(Mvc).csproj|c:\\users\\hp\\desktop\\cryptomarket\\service\\implementation\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDC40BF9-4112-4141-889F-C60C23F40D9F}|RealEstate(Mvc).csproj|solutionrelative:service\\implementation\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDC40BF9-4112-4141-889F-C60C23F40D9F}|RealEstate(Mvc).csproj|c:\\users\\hp\\desktop\\cryptomarket\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDC40BF9-4112-4141-889F-C60C23F40D9F}|RealEstate(Mvc).csproj|solutionrelative:controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EDC40BF9-4112-4141-889F-C60C23F40D9F}|RealEstate(Mvc).csproj|c:\\users\\hp\\desktop\\cryptomarket\\views\\category\\getallcartegory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EDC40BF9-4112-4141-889F-C60C23F40D9F}|RealEstate(Mvc).csproj|solutionrelative:views\\category\\getallcartegory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -109,14 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EDC40BF9-4112-4141-889F-C60C23F40D9F}|RealEstate(Mvc).csproj|c:\\users\\hp\\desktop\\cryptomarket\\views\\transaction\\enterpasscode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EDC40BF9-4112-4141-889F-C60C23F40D9F}|RealEstate(Mvc).csproj|solutionrelative:views\\transaction\\enterpasscode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDC40BF9-4112-4141-889F-C60C23F40D9F}|RealEstate(Mvc).csproj|c:\\users\\hp\\desktop\\cryptomarket\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDC40BF9-4112-4141-889F-C60C23F40D9F}|RealEstate(Mvc).csproj|solutionrelative:controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDC40BF9-4112-4141-889F-C60C23F40D9F}|RealEstate(Mvc).csproj|c:\\users\\hp\\desktop\\cryptomarket\\service\\implementation\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDC40BF9-4112-4141-889F-C60C23F40D9F}|RealEstate(Mvc).csproj|solutionrelative:service\\implementation\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EDC40BF9-4112-4141-889F-C60C23F40D9F}|RealEstate(Mvc).csproj|c:\\users\\hp\\desktop\\cryptomarket\\repository\\implementation\\cartegoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -469,20 +469,72 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Receipt.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Transaction\\Receipt.cshtml",
+              "RelativeDocumentMoniker": "Views\\Transaction\\Receipt.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Transaction\\Receipt.cshtml",
+              "RelativeToolTip": "Views\\Transaction\\Receipt.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-28T10:09:22.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DeleteProduct.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Product\\DeleteProduct.cshtml",
-              "RelativeDocumentMoniker": "Views\\Product\\DeleteProduct.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Product\\DeleteProduct.cshtml",
-              "RelativeToolTip": "Views\\Product\\DeleteProduct.cshtml",
+              "Title": "GetAllCustomer.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Customer\\GetAllCustomer.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customer\\GetAllCustomer.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Customer\\GetAllCustomer.cshtml",
+              "RelativeToolTip": "Views\\Customer\\GetAllCustomer.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T19:00:02.8Z",
+              "WhenOpened": "2024-12-04T17:58:38.907Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "getAllCartegory.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Category\\getAllCartegory.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\getAllCartegory.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Category\\getAllCartegory.cshtml",
+              "RelativeToolTip": "Views\\Category\\getAllCartegory.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T17:57:22.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Controllers\\TransactionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TransactionController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Controllers\\TransactionController.cs",
+              "RelativeToolTip": "Controllers\\TransactionController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAApwBcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T10:07:57.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Service\\Implementation\\TransactionService.cs",
+              "RelativeDocumentMoniker": "Service\\Implementation\\TransactionService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Service\\Implementation\\TransactionService.cs",
+              "RelativeToolTip": "Service\\Implementation\\TransactionService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAApwCMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T10:07:57.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "UpdateProduct.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Product\\UpdateProduct.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\UpdateProduct.cshtml",
@@ -496,45 +548,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Receipt.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Transaction\\Receipt.cshtml",
-              "RelativeDocumentMoniker": "Views\\Transaction\\Receipt.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Transaction\\Receipt.cshtml",
-              "RelativeToolTip": "Views\\Transaction\\Receipt.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFMAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-28T10:09:22.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetAllCustomer.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Customer\\GetAllCustomer.cshtml",
-              "RelativeDocumentMoniker": "Views\\Customer\\GetAllCustomer.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Customer\\GetAllCustomer.cshtml",
-              "RelativeToolTip": "Views\\Customer\\GetAllCustomer.cshtml",
+              "Title": "DeleteProduct.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Product\\DeleteProduct.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\DeleteProduct.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Product\\DeleteProduct.cshtml",
+              "RelativeToolTip": "Views\\Product\\DeleteProduct.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T17:58:38.907Z",
+              "WhenOpened": "2024-12-04T19:00:02.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "getAllCartegory.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Category\\getAllCartegory.cshtml",
-              "RelativeDocumentMoniker": "Views\\Category\\getAllCartegory.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Category\\getAllCartegory.cshtml",
-              "RelativeToolTip": "Views\\Category\\getAllCartegory.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T17:57:22.16Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "View.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Transaction\\View.cshtml",
               "RelativeDocumentMoniker": "Views\\Transaction\\View.cshtml",
@@ -547,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -560,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "GetTransferByRefNumber.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Transaction\\GetTransferByRefNumber.cshtml",
               "RelativeDocumentMoniker": "Views\\Transaction\\GetTransferByRefNumber.cshtml",
@@ -573,7 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "GetByCustomerId.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Transaction\\GetByCustomerId.cshtml",
               "RelativeDocumentMoniker": "Views\\Transaction\\GetByCustomerId.cshtml",
@@ -586,7 +612,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "GetTransferByPropertyId.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Transaction\\GetTransferByPropertyId.cshtml",
               "RelativeDocumentMoniker": "Views\\Transaction\\GetTransferByPropertyId.cshtml",
@@ -599,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Service\\Implementation\\CustomerService.cs",
               "RelativeDocumentMoniker": "Service\\Implementation\\CustomerService.cs",
@@ -612,7 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
@@ -625,7 +651,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "GetCustomerByEmail.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Customer\\GetCustomerByEmail.cshtml",
               "RelativeDocumentMoniker": "Views\\Customer\\GetCustomerByEmail.cshtml",
@@ -638,7 +664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "GetProductByPrice.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Product\\GetProductByPrice.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\GetProductByPrice.cshtml",
@@ -651,7 +677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "GetByAvailability.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Product\\GetByAvailability.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\GetByAvailability.cshtml",
@@ -664,7 +690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "GetProductById.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Product\\GetProductById.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\GetProductById.cshtml",
@@ -677,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "GetProductByDescription.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Product\\GetProductByDescription.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\GetProductByDescription.cshtml",
@@ -690,7 +716,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "GetProductByCartegoryId.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Product\\GetProductByCartegoryId.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\GetProductByCartegoryId.cshtml",
@@ -703,7 +729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "GetAllProduct.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Product\\GetAllProduct.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\GetAllProduct.cshtml",
@@ -716,7 +742,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
@@ -729,7 +755,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "CustomerDto.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Dtos\\CustomerDto.cs",
               "RelativeDocumentMoniker": "Dtos\\CustomerDto.cs",
@@ -742,7 +768,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "CurrentUser.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Repository\\implementation\\CurrentUser.cs",
               "RelativeDocumentMoniker": "Repository\\implementation\\CurrentUser.cs",
@@ -755,7 +781,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "WalletController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Controllers\\WalletController.cs",
               "RelativeDocumentMoniker": "Controllers\\WalletController.cs",
@@ -768,7 +794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "WalletLandingPage.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Wallet\\WalletLandingPage.cshtml",
               "RelativeDocumentMoniker": "Views\\Wallet\\WalletLandingPage.cshtml",
@@ -781,7 +807,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "GetAllTransfer.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Transaction\\GetAllTransfer.cshtml",
               "RelativeDocumentMoniker": "Views\\Transaction\\GetAllTransfer.cshtml",
@@ -793,7 +819,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Service\\Implementation\\ProductService.cs",
               "RelativeDocumentMoniker": "Service\\Implementation\\ProductService.cs",
@@ -805,20 +831,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "TransactionController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Controllers\\TransactionController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TransactionController.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Controllers\\TransactionController.cs",
-              "RelativeToolTip": "Controllers\\TransactionController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAA7wDgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T10:07:57.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "EnterPasscode.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Transaction\\EnterPasscode.cshtml",
               "RelativeDocumentMoniker": "Views\\Transaction\\EnterPasscode.cshtml",
@@ -827,19 +840,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-28T10:13:51.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "TransactionService.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Service\\Implementation\\TransactionService.cs",
-              "RelativeDocumentMoniker": "Service\\Implementation\\TransactionService.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Service\\Implementation\\TransactionService.cs",
-              "RelativeToolTip": "Service\\Implementation\\TransactionService.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAswGUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T10:07:57.154Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",

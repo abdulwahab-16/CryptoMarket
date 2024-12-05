@@ -7895,9 +7895,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\CryptoMarket\\RealEstate(Mvc).csproj",
-      "projectName": "RealEstate(Mvc)",
-      "projectPath": "C:\\Users\\HP\\Desktop\\CryptoMarket\\RealEstate(Mvc).csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\CryptoMarket\\CryptoMarket.csproj",
+      "projectName": "CryptoMarket",
+      "projectPath": "C:\\Users\\HP\\Desktop\\CryptoMarket\\CryptoMarket.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\HP\\Desktop\\CryptoMarket\\obj\\",
       "projectStyle": "PackageReference",

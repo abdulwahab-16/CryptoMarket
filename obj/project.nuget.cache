@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IaIkeJ94Khs=",
+  "dgSpecHash": "ewPhW1AWbYU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\CryptoMarket\\RealEstate(Mvc).csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\CryptoMarket\\CryptoMarket.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\azure.core\\1.40.0\\azure.core.1.40.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\azure.identity\\1.12.0\\azure.identity.1.12.0.nupkg.sha512",

@@ -475,7 +475,7 @@
               "RelativeDocumentMoniker": "Views\\Transaction\\Receipt.cshtml",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Transaction\\Receipt.cshtml",
               "RelativeToolTip": "Views\\Transaction\\Receipt.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFMAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAIBJwFMAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-28T10:09:22.786Z",
               "EditorCaption": ""
@@ -501,7 +501,7 @@
               "RelativeDocumentMoniker": "Views\\Category\\getAllCartegory.cshtml",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Category\\getAllCartegory.cshtml",
               "RelativeToolTip": "Views\\Category\\getAllCartegory.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwCQAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-04T17:57:22.16Z",
               "EditorCaption": ""
@@ -579,7 +579,7 @@
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAABUBAAAAAAAAAAAAAFMBAABDAAAAAAAAAA==",
+              "ViewState": "AgIAABIBAAAAAAAAAIBJwFMBAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-30T21:04:30.385Z",
               "EditorCaption": ""
@@ -657,7 +657,7 @@
               "RelativeDocumentMoniker": "Views\\Customer\\GetCustomerByEmail.cshtml",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Customer\\GetCustomerByEmail.cshtml",
               "RelativeToolTip": "Views\\Customer\\GetCustomerByEmail.cshtml",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFoAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAIBJwFoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-04T17:58:41.586Z",
               "EditorCaption": ""
@@ -670,7 +670,7 @@
               "RelativeDocumentMoniker": "Views\\Product\\GetProductByPrice.cshtml",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Product\\GetProductByPrice.cshtml",
               "RelativeToolTip": "Views\\Product\\GetProductByPrice.cshtml",
-              "ViewState": "AgIAANIAAAAAAAAAAAAAAOkAAABoAAAAAAAAAA==",
+              "ViewState": "AgIAAM8AAAAAAAAAAIBJwOkAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-30T20:53:47.694Z",
               "EditorCaption": ""
@@ -696,7 +696,7 @@
               "RelativeDocumentMoniker": "Views\\Product\\GetProductById.cshtml",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Product\\GetProductById.cshtml",
               "RelativeToolTip": "Views\\Product\\GetProductById.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAIBJwEcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-30T20:53:26.858Z",
               "EditorCaption": ""
@@ -735,7 +735,7 @@
               "RelativeDocumentMoniker": "Views\\Product\\GetAllProduct.cshtml",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Product\\GetAllProduct.cshtml",
               "RelativeToolTip": "Views\\Product\\GetAllProduct.cshtml",
-              "ViewState": "AgIAALYBAAAAAAAAAAAAAPAAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAALEBAAAAAAAAAEBVwPAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-28T10:52:31Z",
               "EditorCaption": ""
@@ -815,7 +815,8 @@
               "RelativeToolTip": "Views\\Transaction\\GetAllTransfer.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T14:32:08.632Z"
+              "WhenOpened": "2024-12-05T14:32:08.632Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -827,7 +828,8 @@
               "RelativeToolTip": "Service\\Implementation\\ProductService.cs",
               "ViewState": "AgIAAGABAAAAAAAAAAAkwHcBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T10:07:57.05Z"
+              "WhenOpened": "2024-08-28T10:07:57.05Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -839,7 +841,8 @@
               "RelativeToolTip": "Views\\Transaction\\EnterPasscode.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-28T10:13:51.111Z"
+              "WhenOpened": "2024-08-28T10:13:51.111Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -851,7 +854,8 @@
               "RelativeToolTip": "Repository\\implementation\\CartegoryRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:41:44.123Z"
+              "WhenOpened": "2024-12-03T18:41:44.123Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -863,7 +867,8 @@
               "RelativeToolTip": "Context\\ContextClass.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T13:29:48.783Z"
+              "WhenOpened": "2024-09-10T13:29:48.783Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -875,7 +880,8 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAApwDMAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T14:55:32.5Z"
+              "WhenOpened": "2024-09-10T14:55:32.5Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -900,7 +906,8 @@
               "RelativeToolTip": "Views\\Customer\\AddMoneyToWallet.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T17:58:26.841Z"
+              "WhenOpened": "2024-12-04T17:58:26.841Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -912,7 +919,8 @@
               "RelativeToolTip": "Dtos\\TransactionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T10:12:46.114Z"
+              "WhenOpened": "2024-08-28T10:12:46.114Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -935,9 +943,10 @@
               "RelativeDocumentMoniker": "Dtos\\ProductDto.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Dtos\\ProductDto.cs",
               "RelativeToolTip": "Dtos\\ProductDto.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA5wB0AAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wB0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T19:21:36.337Z"
+              "WhenOpened": "2024-12-03T19:21:36.337Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -949,7 +958,8 @@
               "RelativeToolTip": "Repository\\implementation\\ProductRepository.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAApwCQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:43:09.238Z"
+              "WhenOpened": "2024-12-03T18:43:09.238Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -961,7 +971,8 @@
               "RelativeToolTip": "Models\\Entities\\Products.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:28:40.772Z"
+              "WhenOpened": "2024-09-04T12:28:40.772Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -980,9 +991,10 @@
               "RelativeDocumentMoniker": "Service\\Implementation\\WalletService.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Service\\Implementation\\WalletService.cs",
               "RelativeToolTip": "Service\\Implementation\\WalletService.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAAAE4AAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAIBJwE4AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T07:56:39.758Z"
+              "WhenOpened": "2024-12-04T07:56:39.758Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1003,7 +1015,8 @@
               "RelativeToolTip": "Service\\Interface\\IWalletService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T20:09:04.239Z"
+              "WhenOpened": "2024-12-03T20:09:04.239Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1024,7 +1037,8 @@
               "RelativeToolTip": "Repository\\Interface\\IWalletRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:32:54.99Z"
+              "WhenOpened": "2024-12-03T18:32:54.99Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1036,7 +1050,8 @@
               "RelativeToolTip": "Migrations\\20241205061103_CryptoMarket3.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T06:11:03.963Z"
+              "WhenOpened": "2024-12-05T06:11:03.963Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1048,7 +1063,8 @@
               "RelativeToolTip": "Models\\Entities\\Customer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:31:24.804Z"
+              "WhenOpened": "2024-09-04T12:31:24.804Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1060,7 +1076,8 @@
               "RelativeToolTip": "Repository\\implementation\\WalletRepository.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAewCYAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T19:05:36.352Z"
+              "WhenOpened": "2024-12-03T19:05:36.352Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1072,7 +1089,8 @@
               "RelativeToolTip": "Models\\Entities\\Wallet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:07:20.475Z"
+              "WhenOpened": "2024-12-03T18:07:20.475Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1093,7 +1111,8 @@
               "RelativeToolTip": "Repository\\implementation\\CustomerRepository.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAApwC0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T09:52:39.891Z"
+              "WhenOpened": "2024-09-04T09:52:39.891Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1105,7 +1124,8 @@
               "RelativeToolTip": "Migrations\\20241205054957_CryptoMarket2.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T05:49:57.541Z"
+              "WhenOpened": "2024-12-05T05:49:57.541Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1117,7 +1137,8 @@
               "RelativeToolTip": "Views\\Product\\CreateProduct.cshtml",
               "ViewState": "AgIAAD8AAAAAAAAAAAAYwEsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T23:04:11.509Z"
+              "WhenOpened": "2024-12-04T23:04:11.509Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1151,7 +1172,8 @@
               "RelativeToolTip": "Dtos\\CategoryDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:36:57.006Z"
+              "WhenOpened": "2024-09-04T12:36:57.006Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1161,9 +1183,10 @@
               "RelativeDocumentMoniker": "Views\\User\\SuperAdminDashBord.cshtml",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\User\\SuperAdminDashBord.cshtml",
               "RelativeToolTip": "Views\\User\\SuperAdminDashBord.cshtml",
-              "ViewState": "AgIAANUAAAAAAAAAAAAAABIBAABJAAAAAAAAAA==",
+              "ViewState": "AgIAANIAAAAAAAAAAIBJwBIBAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T16:16:56.143Z"
+              "WhenOpened": "2024-12-04T16:16:56.143Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1175,7 +1198,8 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-10T13:23:58.589Z"
+              "WhenOpened": "2024-09-10T13:23:58.589Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1187,7 +1211,8 @@
               "RelativeToolTip": "appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-10T13:24:01.015Z"
+              "WhenOpened": "2024-09-10T13:24:01.015Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1199,7 +1224,8 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T19:20:07.534Z"
+              "WhenOpened": "2024-12-04T19:20:07.534Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1211,7 +1237,8 @@
               "RelativeToolTip": "ViewModel\\ProductViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T16:22:00.733Z"
+              "WhenOpened": "2024-12-04T16:22:00.733Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1221,9 +1248,10 @@
               "RelativeDocumentMoniker": "Views\\Customer\\CreateCustomer.cshtml",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Customer\\CreateCustomer.cshtml",
               "RelativeToolTip": "Views\\Customer\\CreateCustomer.cshtml",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHYAAABjAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAIBJwHYAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-03T11:08:03.498Z"
+              "WhenOpened": "2024-09-03T11:08:03.498Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1233,9 +1261,10 @@
               "RelativeDocumentMoniker": "Repository\\implementation\\UserRepository.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Repository\\implementation\\UserRepository.cs",
               "RelativeToolTip": "Repository\\implementation\\UserRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:54:30.144Z"
+              "WhenOpened": "2024-12-03T18:54:30.144Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1247,7 +1276,8 @@
               "RelativeToolTip": "Views\\Customer\\GetCustomerById.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T17:58:45.178Z"
+              "WhenOpened": "2024-12-04T17:58:45.178Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1259,7 +1289,8 @@
               "RelativeToolTip": "Views\\Customer\\UpdateCustomer.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAALkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-02T14:46:07.062Z"
+              "WhenOpened": "2024-09-02T14:46:07.062Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1271,7 +1302,8 @@
               "RelativeToolTip": "Views\\Customer\\DeleteCustomer.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T17:58:35.744Z"
+              "WhenOpened": "2024-12-04T17:58:35.744Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1283,7 +1315,8 @@
               "RelativeToolTip": "Views\\Category\\Update.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T17:58:22.295Z"
+              "WhenOpened": "2024-12-04T17:58:22.295Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1295,7 +1328,8 @@
               "RelativeToolTip": "Views\\Category\\GetById.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T17:57:25.615Z"
+              "WhenOpened": "2024-12-04T17:57:25.615Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1305,9 +1339,10 @@
               "RelativeDocumentMoniker": "Views\\Category\\Delete.cshtml",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\Category\\Delete.cshtml",
               "RelativeToolTip": "Views\\Category\\Delete.cshtml",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAGUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAIBJwGUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T17:57:08.657Z"
+              "WhenOpened": "2024-12-04T17:57:08.657Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1319,7 +1354,8 @@
               "RelativeToolTip": "Views\\Category\\CreateCategory.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T17:56:58.981Z"
+              "WhenOpened": "2024-12-04T17:56:58.981Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1329,9 +1365,10 @@
               "RelativeDocumentMoniker": "Views\\User\\createUser.cshtml",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\User\\createUser.cshtml",
               "RelativeToolTip": "Views\\User\\createUser.cshtml",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T17:52:45.841Z"
+              "WhenOpened": "2024-12-04T17:52:45.841Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1343,7 +1380,8 @@
               "RelativeToolTip": "Views\\Category\\GetByName.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T17:46:38.535Z"
+              "WhenOpened": "2024-12-04T17:46:38.535Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1355,7 +1393,8 @@
               "RelativeToolTip": "Migrations\\20241204165201_CryptoMarketDb.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T16:52:01.377Z"
+              "WhenOpened": "2024-12-04T16:52:01.377Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1367,7 +1406,8 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T16:03:35.651Z"
+              "WhenOpened": "2024-12-04T16:03:35.651Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1412,7 +1452,8 @@
               "RelativeToolTip": "Controllers\\RoleController.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAArwCcAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T16:03:51.218Z"
+              "WhenOpened": "2024-12-04T16:03:51.218Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1424,7 +1465,8 @@
               "RelativeToolTip": "Controllers\\StaffController.cs",
               "ViewState": "AgIAAGUAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T16:03:59.218Z"
+              "WhenOpened": "2024-12-04T16:03:59.218Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1449,7 +1491,8 @@
               "RelativeToolTip": "Dtos\\WalletDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T19:22:37.099Z"
+              "WhenOpened": "2024-12-03T19:22:37.099Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1461,7 +1504,8 @@
               "RelativeToolTip": "Service\\Implementation\\StaffService.cs",
               "ViewState": "AgIAAI4BAAAAAAAAAAAAwDoBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T14:42:50.383Z"
+              "WhenOpened": "2024-12-04T14:42:50.383Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1471,9 +1515,10 @@
               "RelativeDocumentMoniker": "Dtos\\StaffDto.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Dtos\\StaffDto.cs",
               "RelativeToolTip": "Dtos\\StaffDto.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T19:20:38.954Z"
+              "WhenOpened": "2024-12-03T19:20:38.954Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1485,7 +1530,8 @@
               "RelativeToolTip": "Repository\\Interface\\IRoleRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:22:12.355Z"
+              "WhenOpened": "2024-12-03T18:22:12.355Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1497,7 +1543,8 @@
               "RelativeToolTip": "Service\\Implementation\\RoleService.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T14:37:08.116Z"
+              "WhenOpened": "2024-12-04T14:37:08.116Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1509,7 +1556,8 @@
               "RelativeToolTip": "Repository\\Interface\\IProductRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:20:43.018Z"
+              "WhenOpened": "2024-12-03T18:20:43.018Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1521,7 +1569,8 @@
               "RelativeToolTip": "Service\\Interface\\IRoleService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T20:07:11.736Z"
+              "WhenOpened": "2024-12-03T20:07:11.736Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1533,7 +1582,8 @@
               "RelativeToolTip": "Service\\Interface\\IProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T20:02:36.371Z"
+              "WhenOpened": "2024-12-03T20:02:36.371Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1545,7 +1595,8 @@
               "RelativeToolTip": "Service\\Interface\\ICustomerService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T19:59:00.85Z"
+              "WhenOpened": "2024-12-03T19:59:00.85Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1557,7 +1608,8 @@
               "RelativeToolTip": "Dtos\\UserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T13:12:28.34Z"
+              "WhenOpened": "2024-12-04T13:12:28.34Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1569,7 +1621,8 @@
               "RelativeToolTip": "Models\\Entities\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:28:15.277Z"
+              "WhenOpened": "2024-09-04T12:28:15.277Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1581,7 +1634,8 @@
               "RelativeToolTip": "Dtos\\BaseResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T19:55:20.579Z"
+              "WhenOpened": "2024-12-03T19:55:20.579Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1593,7 +1647,8 @@
               "RelativeToolTip": "Service\\Interface\\IUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T19:18:56.264Z"
+              "WhenOpened": "2024-12-03T19:18:56.264Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1605,7 +1660,8 @@
               "RelativeToolTip": "Service\\Interface\\ITransactionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T20:05:44.867Z"
+              "WhenOpened": "2024-12-03T20:05:44.867Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1617,7 +1673,8 @@
               "RelativeToolTip": "Repository\\Interface\\ITransactionRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:22:19.186Z"
+              "WhenOpened": "2024-12-03T18:22:19.186Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1629,7 +1686,8 @@
               "RelativeToolTip": "Repository\\Interface\\IStaffRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:22:14.472Z"
+              "WhenOpened": "2024-12-03T18:22:14.472Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1641,7 +1699,8 @@
               "RelativeToolTip": "Service\\Interface\\IStaffService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T20:06:22.302Z"
+              "WhenOpened": "2024-12-03T20:06:22.302Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1653,7 +1712,8 @@
               "RelativeToolTip": "Repository\\Interface\\ICustomerRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:20:12.299Z"
+              "WhenOpened": "2024-12-03T18:20:12.299Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1665,7 +1725,8 @@
               "RelativeToolTip": "Repository\\Interface\\ICartegoryRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:20:04.737Z"
+              "WhenOpened": "2024-12-03T18:20:04.737Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1677,7 +1738,8 @@
               "RelativeToolTip": "Service\\Interface\\ICartegoryService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T19:56:49.014Z"
+              "WhenOpened": "2024-12-03T19:56:49.014Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1689,7 +1751,8 @@
               "RelativeToolTip": "Dtos\\RoleDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T19:49:56.986Z"
+              "WhenOpened": "2024-12-03T19:49:56.986Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1701,7 +1764,8 @@
               "RelativeToolTip": "Models\\Entities\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:29:22.705Z"
+              "WhenOpened": "2024-09-04T12:29:22.705Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1713,7 +1777,8 @@
               "RelativeToolTip": "Models\\Entities\\Transaction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:29:15.342Z"
+              "WhenOpened": "2024-09-04T12:29:15.342Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1725,7 +1790,8 @@
               "RelativeToolTip": "Models\\Entities\\Staff.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T14:23:12.221Z"
+              "WhenOpened": "2024-09-16T14:23:12.221Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1737,7 +1803,8 @@
               "RelativeToolTip": "Repository\\implementation\\TransactionRepository.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAIwC8AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:53:44.364Z"
+              "WhenOpened": "2024-12-03T18:53:44.364Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1749,7 +1816,8 @@
               "RelativeToolTip": "Repository\\implementation\\StaffRepository.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:53:40.804Z"
+              "WhenOpened": "2024-12-03T18:53:40.804Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1761,7 +1829,8 @@
               "RelativeToolTip": "Repository\\implementation\\RoleRepository.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:53:35.035Z"
+              "WhenOpened": "2024-12-03T18:53:35.035Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1773,7 +1842,8 @@
               "RelativeToolTip": "Repository\\Interface\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:22:22.091Z"
+              "WhenOpened": "2024-12-03T18:22:22.091Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1785,7 +1855,8 @@
               "RelativeToolTip": "Repository\\Interface\\ICurrentUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:20:10.052Z"
+              "WhenOpened": "2024-12-03T18:20:10.052Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1797,7 +1868,8 @@
               "RelativeToolTip": "Models\\Entities\\UserRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:29:03.292Z"
+              "WhenOpened": "2024-09-04T12:29:03.292Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1809,7 +1881,8 @@
               "RelativeToolTip": "Models\\Entities\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:28:55.223Z"
+              "WhenOpened": "2024-09-04T12:28:55.223Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1821,7 +1894,8 @@
               "RelativeToolTip": "Models\\Entities\\Person.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T15:38:49.605Z"
+              "WhenOpened": "2024-09-07T15:38:49.605Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1831,9 +1905,10 @@
               "RelativeDocumentMoniker": "Session.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Session.cs",
               "RelativeToolTip": "Session.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAJAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T13:07:24.856Z"
+              "WhenOpened": "2024-09-19T13:07:24.856Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1852,9 +1927,10 @@
               "RelativeDocumentMoniker": "Models\\Enum\\Gender.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Models\\Enum\\Gender.cs",
               "RelativeToolTip": "Models\\Enum\\Gender.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T10:53:23.924Z"
+              "WhenOpened": "2024-09-16T10:53:23.924Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1864,9 +1940,10 @@
               "RelativeDocumentMoniker": "Views\\User\\LogIn.cshtml",
               "ToolTip": "C:\\Users\\HP\\Desktop\\CryptoMarket\\Views\\User\\LogIn.cshtml",
               "RelativeToolTip": "Views\\User\\LogIn.cshtml",
-              "ViewState": "AQIAAFgAAAAAAAAAAIBJwGgAAAAJAAAA",
+              "ViewState": "AgIAAFUAAAAAAAAAAIBZwGgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-03T11:14:12.605Z"
+              "WhenOpened": "2024-09-03T11:14:12.605Z",
+              "EditorCaption": ""
             }
           ]
         }
