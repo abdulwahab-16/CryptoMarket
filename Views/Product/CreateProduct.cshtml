@@ -1,0 +1,109 @@
+﻿@* 
+
+
+@using RealEstate_Mvc_.Dtos
+@using RealEstate_Mvc_.Service.Implementation
+
+
+@model ProductRequestModel;
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Message
+    </div>
+}
+<div class="container d-flex align-items-center justify-content-center">
+    <div class="card p-4 shadow-sm w-100" style="max-width: 650px;">
+        <h3 class="text-center mb-4">Create Product</h3>
+        <form asp-action="Create Product" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label">Description</label>
+                <input type="text" class="form-control" placeholder="Description" asp-for="Description" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Email" asp-for="Email" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Price" class="form-label">Price</label>
+                <input type="number" class="form-control" placeholder="Price" asp-for="Price" />
+            </div>
+
+            <div class="form-group">
+                <div class="dropdown">
+                    @Html.DropDownList("CategoryId", (SelectList)ViewBag.Categories, "Select a category", new { @class = "form-control" })
+                </div>
+            </div>
+            <br>
+            <div class="mb-3">
+                <label asp-for="ProfilePicture" class="form-label">PropertyImage</label>
+                <input type="file" class="form-control" asp-for="ProfilePicture" multiple />
+                <span asp-validation-for="ProfilePicture" class="text-danger"></span>
+            </div>
+            <div class="d-grid">
+                <input asp-controller="Product" asp-action="createProduct" type="submit" value="Submit " class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+ 
+
+
+
+
+ *@
+
+
+
+                @using RealEstate_Mvc_.Dtos
+@model ProductRequestModel
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Message
+    </div>
+}
+
+<div class="container d-flex align-items-center justify-content-center">
+    <div class="card p-4 shadow-sm w-100" style="max-width: 650px;">
+        <h3 class="text-center mb-4">Create Product</h3>
+        <form asp-action="CreateProduct" enctype="multipart/form-data" method="post">
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label">Product Name</label>
+                <input type="text" class="form-control" placeholder="Name" asp-for="Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label">Description</label>
+                <input type="text" class="form-control" placeholder="Description" asp-for="Description" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Email" asp-for="Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Price" class="form-label">Price</label>
+                <input type="number" class="form-control" placeholder="Price" asp-for="Price" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoryId">Category</label>
+                @Html.DropDownListFor(m => m.CategoryId, (SelectList)ViewBag.Categories, "Select a category", new { @class = "form-control" })
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+            <br>
+            <div class="mb-3">
+                <label asp-for="ProfilePicture" class="form-label">Property Images</label>
+                <input type="file" class="form-control" asp-for="ProfilePicture" multiple />
+                <span asp-validation-for="ProfilePicture" class="text-danger"></span>
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

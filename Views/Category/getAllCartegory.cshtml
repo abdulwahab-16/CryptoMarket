@@ -1,0 +1,74 @@
+﻿ @using RealEstate_Mvc_.Dtos
+@using System.Security.Claims
+@model IEnumerable<CategoryResponseModel>
+
+@{
+    ViewData["Title"] = "All Categories";
+}
+
+<div class="container mt-5">
+    <h2>@ViewData["Title"]</h2>
+
+    <style>
+        .asd
+        {
+            justify-content:end;
+            align-content:end;
+        }
+    </style>
+
+    @if (Model == null || !Model.Any())
+    {
+        <p>No categories available.</p>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var category in Model)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">@category.Name</h5>
+                            <p class="card-text">
+                                @category.Description 
+                            </p>
+                            <p class="card-text">
+                                <strong>Number of Products:</strong> @category.products.Count
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="@Url.Action("GetByName", "Category", new { id = category.Name })" class="btn btn-primary">View Details</a>
+                            <div class="asd">
+                                @if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value != "Customer")
+                                {
+                                    <div class="card-footer2">
+                                        <a href="@Url.Action("Delete", "Category")" class="btn btn-primary">Delete</a>
+                                    </div>
+                                }
+                            </div>
+                        
+                        </div>
+                       
+                    </div>
+                </div>
+            }
+            @if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value == "Customer")
+            {
+                <div class="card-footer2">
+                    <a href="@Url.Action("GetAllProperty", "Property")" class="btn btn-primary">Go Back</a>
+                </div>
+            }
+            else
+            {
+                <div class="card-footer2">
+                    <a href="@Url.Action("SuperAdminDashBord", "User")" class="btn btn-primary">Go Back</a>
+                </div>
+            }
+           
+
+
+        </div>
+    }
+</div>
+ 

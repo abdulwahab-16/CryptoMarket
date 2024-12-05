@@ -1,0 +1,71 @@
+﻿@using System.Security.Claims
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@{
+    ViewData["Title"] = "Add Money to Wallet";
+}
+
+<div class="container mt-5">
+    <h2>@ViewData["Title"]</h2>
+    <p>Please enter the amount you want to add to your wallet.</p>
+    <form asp-action="AddMoneyToWallet" method="post">
+        <div class="form-group">
+            <label for="Amount">Amount:</label>
+            <input type="number" step="0.01" class="form-control" id="Amount" name="amount" placeholder="Enter amount" required>
+        </div>
+        <div class="form-group">
+            <label for="passcode">Wallet Passcode:</label>
+            <input type="password" class="form-control" name="passcode" placeholder="Enter PassCode" required>
+
+        </div>
+        <button type="submit" class="btn btn-success mt-3">Add Money</button>
+    </form>
+
+    @if (!string.IsNullOrEmpty(ViewBag.Message))
+    {
+        <div class="alert alert-info mt-3">
+            @ViewBag.Message
+        </div>
+    }
+    @if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value == "Customer")
+    {
+        <div class="card-footer2">
+            <a href="@Url.Action("GetAllProperty", "Property")" class="btn btn-primary">Go Back</a>
+        </div>
+    }
+    else
+    {
+        <div class="card-footer2">
+            <a href="@Url.Action("SuperAdminDashBord", "User")" class="btn btn-primary">Go Back</a>
+        </div>
+    }
+</div>
+
+<style>
+    .container {
+        max-width: 600px;
+    }
+
+    .card-footer2{
+        padding-top:10px;
+    }
+    h2 {
+        color: #333;
+    }
+
+    .form-control {
+        border-radius: 0;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        border: none;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+        }
+</style>

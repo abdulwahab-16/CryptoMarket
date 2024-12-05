@@ -1,0 +1,569 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+@using RealEstate_Mvc_.Dtos
+@using RealEstate_Mvc_.ViewModel
+@using System.Security.Claims
+@model ProductViewModel
+
+
+@if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value == "Customer")
+{
+    <li style="list-style: none">
+
+        @{
+            ViewBag.Title = "All Properties";
+        }
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    font-family: Arial, sans-serif;
+                }
+
+
+                .custom-navbar {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    background-color: #343a40;
+                    color: white;
+                    padding: 10px 20px;
+                    border-bottom: 2px solid #ccc;
+                }
+
+                .sidebar {
+                    position: fixed;
+                    top: 50px; /* Space for content above the sidebar */
+                    left: 0;
+                    width: 250px;
+                    height: calc(100% - 50px); /* Adjust for the content above */
+                    background-color: #f8f9fa;
+                    transition: transform 0.3s ease;
+                    transform: translateX(-100%);
+                    z-index: 1000;
+                    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+                }
+
+                    .sidebar.expanded {
+                        transform: translateX(0);
+                        top: 140px;
+                    }
+
+                #toggleBtn {
+                    position: fixed; /* Ensure the button is always visible */
+                    top: 170px; /* Adjust according to the content above */
+                    left: 10px; /* Position near the left side */
+                    z-index: 1100; /* Ensure it appears above other content */
+                    background-color: #007bff; /* Make it stand out */
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+
+                .nav-bar {
+                    margin-top: 20px;
+                    padding: 10px;
+                    display: contents;
+                }
+
+                nav .custom-navbar {
+                    display: contents;
+                }
+
+                /*   .nav-bar img {
+                                            width: 100%;
+                                            border-radius: 50%;
+                                            margin-bottom: 20px;
+                                        } */
+
+                .nav-bar .btn {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    text-align: left;
+                }
+
+                .main-content {
+                    margin-left: 0;
+                    transition: margin-left 0.3s ease;
+                    padding: 20px;
+                    padding-top: 70px; /* Ensure there's space for content above the body */
+                }
+
+                    .main-content.expanded {
+                        margin-left: 250px;
+                    }
+
+
+
+
+
+                .card-img-top {
+                    height: 200px;
+                    object-fit: cover;
+                }
+
+                .btn-custom {
+                    color: white;
+                }
+
+                .form-control-sm {
+                    height: calc(1.5em + .75rem + 2px);
+                    padding: .25rem .5rem;
+                    font-size: .875rem;
+                    line-height: 1.5;
+                    border-radius: .2rem;
+                }
+
+                .btn-sm {
+                    padding: .25rem .5rem;
+                    font-size: .875rem;
+                    line-height: 1.5;
+                    border-radius: .2rem;
+                    background-color: #007bff; /* Simple button color */
+                    color: white;
+                    margin-top: 3px;
+                }
+
+                .container {
+                    margin-top: 80px; /* Adjust to account for fixed navbar height */
+                }
+
+                .form-inline {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px; /* Space between form groups */
+                }
+
+                    .form-inline .form-group {
+                        flex: 1 1 calc(20% - 10px); /* Responsive width for form groups */
+                        margin-bottom: 10px;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                        .form-inline .form-group input,
+                        .form-inline .form-group select {
+                            flex: 1;
+                        }
+
+                        .form-inline .form-group .btn {
+                            flex-shrink: 0; /* Prevent button from shrinking */
+                        }
+
+
+                .carousel-item img {
+                    max-height: 500px;
+                    object-fit: cover;
+                }
+
+                .profile-image {
+                    width: 100px; /* Change this to the desired size */
+                    height: 100px; /* Ensures the image stays square */
+                    border-radius: 50%; /* Makes the image circular */
+                    object-fit: cover; /* Ensures the image fits within the circle */
+                }
+
+                /* General Styles */
+                .container {
+                    margin: 0 auto;
+                }
+
+                /* Form Styling */
+                .form-head {
+                    background-color: #f8f9fa;
+                    border-radius: 10px;
+                    padding: 20px;
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                }
+
+                .form-label {
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+
+                /* Input and Button Styling */
+                .form-control {
+                    border-radius: 5px;
+                    font-size: 14px;
+                }
+
+                .input-group .btn {
+                    border-radius: 0 5px 5px 0;
+                    font-size: 14px;
+                }
+
+                .input-group input {
+                    border-radius: 5px 0 0 5px;
+                }
+
+                /* Button Hover Effects */
+                .btn-primary {
+                    background-color: #007bff;
+                    border-color: #007bff;
+                    transition: background-color 0.3s ease, transform 0.2s ease;
+                }
+
+                    .btn-primary:hover {
+                        background-color: #0056b3;
+                        transform: scale(1.05);
+                    }
+
+            </style>
+
+        </head>
+        <body>
+            <!-- Navigation Bar -->
+            <div class="sidebar collapsed" id="sidebar">
+                <div class="nav-bar">
+                    <img src="~/properties/@ViewBag.image" alt="Customer Profile" class="profile-image">
+                    <h5>Welcome,  @ViewBag.UserName</h5>
+                    <a href="@Url.Action("GetAllCartegory", "Category")" class="btn btn-light btn-sm">Get All Categories</a>
+                    <a href="@Url.Action("GetByName", "Category")" class="btn btn-light btn-sm">Get Category By Name</a>
+                    <a href="@Url.Action("AddMoneyToWallet", "Customer")" class="btn btn-light btn-sm">Add Money to Wallet</a>
+                    <a href="@Url.Action("UpdateCustomer", "Customer")" class="btn btn-light btn-sm">Update Profile</a>
+                    <a href="@Url.Action("GetAllTransfer", "Transaction")" class="btn btn-light btn-sm">See All Transactions</a>
+                    <a href="@Url.Action("WalletLandingPage", "Wallet")" class="btn btn-light btn-sm">Wallet</a>
+                </div>
+            </div>
+
+            <button id="toggleBtn">+</button>
+
+
+            <div class="container mt-5">
+
+
+                <div class="container mt-5">
+                    <!-- Search and Filter Form -->
+                    <div class="form-head p-4 rounded shadow-sm bg-light">
+                        <h4 class="text-center mb-4">Filter Products</h4>
+                        <form asp-action="Index" method="get" class="row g-3">
+                            <!-- Filter by Description -->
+                            <div class="col-md-4">
+                                <label for="description" class="form-label">Search by Description</label>
+                                <div class="input-group">
+                                    <input type="text" id="description" name="description" class="form-control" placeholder="Type here...">
+                                    <button type="submit" asp-controller="Product" asp-action="GetProductByDescription" class="btn btn-primary">Go</button>
+                                </div>
+                            </div>
+
+                            <!-- Filter by Category -->
+                            <div class="col-md-4">
+                                <label for="category" class="form-label">Filter by Category</label>
+                                <div class="input-group">
+                                    @Html.DropDownList("CategoryId", (SelectList)ViewBag.Categories, "Select a category", new { @class = "form-control" })
+                                    <button type="submit" asp-controller="product" asp-action="GetProductByCartegoryId" class="btn btn-primary">Go</button>
+                                </div>
+                            </div>
+
+                            <!-- Filter by Price -->
+                            <div class="col-md-4">
+                                <label for="price" class="form-label">Filter by Price</label>
+                                <div class="input-group">
+                                    <input type="number" id="price" name="price" class="form-control" placeholder="Enter budget" min="0" step="0.01">
+                                    <button type="submit" asp-controller="product" asp-action="GetProductByPrice" class="btn btn-primary">Go</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Properties List -->
+                <div class="row mt-4">
+                    @if (Model == null)
+                    {
+                        <p class="col-12">No properties available.</p>
+                    }
+                    else
+                    {
+                        @foreach (var property in Model.product)
+                        {
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+
+                                    @if (property.Images != null && property.Images.Count > 0)
+                                    {
+                                        var profilePictures = property.Images.ToList();
+
+                                        <div id="propertyCarousel" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                @for (int i = 0; i < property.Images.Count; i++)
+                                                {
+                                                    var isActive = i == 0 ? "active" : ""; // Mark the first slide as active
+                                                    <div class="carousel-item @isActive">
+                                                        <img src="~/properties/@property.Images[i]" class="d-block w-100" alt="Property Image">
+                                                    </div>
+                                                }
+                                            </div>
+                                            <a class="carousel-control-prev" href="#propertyCarousel" role="button" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#propertyCarousel" role="button" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </a>
+                                        </div>
+                                    }
+                                    <div class="card-body">
+                                        <p class="card-text">@property.Description</p>
+                                        <p class="card-text"><strong>Price:</strong> @property.Price</p>
+                                        <p class="card-text"><strong>Category:</strong> @property.CategoryName<p>
+                                        <p class="card-text"><strong>Available:</strong> @property.IsAvailable</p>
+                                        <a href="@Url.Action("GetproductById", "product", new { id = property.Id })" class="btn btn-primary btn-sm">View Details</a>
+                                        <a href="@Url.Action("EnterPasscode", "Transaction", new { productId = property.Id, email = property.CurrentUser })"
+                                           class="btn btn-success">Grab Your Product</a>
+                                    </div>
+                                </div>
+                            </div>
+                        } 
+                        @if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value == "Customer")
+                        {
+                            <div class="card-footer2">
+                                <a href="@Url.Action("GetAllProperty", "Property")" class="btn btn-primary">Go Back</a>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="card-footer2">
+                                <a href="@Url.Action("SuperAdminDashBord", "User")" class="btn btn-primary">Go Back</a>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </body>
+        <script>
+            document.getElementById('toggleBtn').addEventListener('click', function () {
+                var sidebar = document.getElementById('sidebar');
+                var mainContent = document.getElementById('mainContent');
+                if (sidebar.classList.contains('collapsed')) {
+                    sidebar.classList.remove('collapsed');
+                    sidebar.classList.add('expanded');
+                    mainContent.classList.add('expanded');
+                    this.textContent = '-';
+                } else {
+                    sidebar.classList.remove('expanded');
+                    sidebar.classList.add('collapsed');
+                    mainContent.classList.remove('expanded');
+                    this.textContent = '+';
+                }
+            });
+
+            // Bootstrap Carousel initialization (if needed)
+            var myCarousel = document.querySelector('#propertyCarousel');
+            var carousel = new bootstrap.Carousel(myCarousel, {
+                interval: 3000, // 3 seconds
+                ride: 'carousel'
+            });
+        </script>
+    </html>
+
+
+
+    </li>
+}
+else
+{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties Under Your Budget</title>
+    <link href="~/css/dash.css" rel="stylesheet" />
+   <style>
+        body {
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .search-form {
+            margin-bottom: 30px;
+        }
+
+            .search-form input {
+                border-radius: 20px;
+                padding: 10px;
+                border: 1px solid #ced4da;
+            }
+
+            .search-form button {
+                border-radius: 20px;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                margin-left: 10px;
+            }
+            .row
+            {
+                padding-top:10px;
+            }
+
+                .search-form button:hover {
+                    background-color: #0056b3;
+                }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .form-control
+        {
+            gap:10px ;
+            border-radius: 15px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .btn-custom {
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+
+
+        .no-properties {
+            text-align: center;
+            color: #6c757d;
+            margin-top: 50px;
+        }
+
+        .form-control
+        {
+            padding-left:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Find Properties Within Your Budget</h1>
+        <form method="post" action="@Url.Action("GetPropertyByPrice", "Property")" class="search-form1">
+            <div>
+                <label for="price">Enter your Budget:</label>
+                <div class="form-group d-flex align-items-center">
+                    <input type="number" id="price" for="price" name="price" class="form-control" value="price" placeholder="Enter your budget" min="0" step="0.01">
+                    <button type="submit" asp-controller="Property" value="price" asp-action="GetPropertyByPrice" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </form>
+         @if (Model == null || !Model.product.Any())
+        {
+            <p class="no-properties">No properties found within your budget.</p>
+        }
+        else
+        {
+            <div class="row">
+                @foreach (var property in Model.product)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+
+                                @if (property.Images != null && property.Images.Count > 0)
+                                {
+                                    var profilePictures = property.Images.ToList();
+
+                                     <div id="propertyCarousel" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            @for (int i = 0; i < profilePictures.Count; i++)
+                                            {
+
+                                                var image = profilePictures[i];
+                                                <div class="carousel-item @(i == 0 ? "active" : "")">
+                                                    <img src="~/properties/@image" class="d-block w-100" alt="Property Image" style="height: 200px; object-fit: cover;">
+                                                </div>
+                                            }
+                                        </div>
+                                        <a class="carousel-control-prev" href="#propertyCarousel" role="button" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#propertyCarousel" role="button" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </a>
+                                    </div> 
+                                }
+                                <div class="card-body">
+                                <p class="card-text">@property.Description</p>
+                                <p class="card-text"><strong>Price:</strong> @property.Price</p>
+                                <p class="card-text"><strong>Category:</strong> @property.CategoryName</p>
+                                <p class="card-text"><strong>Available:</strong> @property.IsAvailable</p>
+                                    <a href="@Url.Action("GetPropertyById", "Property", new { id = property.Id })" class="btn btn-primary btn-sm">View Details</a>
+                                    <a href="@Url.Action("createTransfer", "Transaction", new TransactionRequestModel { ProductId = property.Id,Email=property.CurrentUser })    " class="btn btn-success">Grab Your Property</a> 
+                                </div> 
+                        </div>
+                    </div>
+                }
+            </div>
+                @if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value == "Customer")
+                {
+                    <div class="card-footer2">
+                        <a href="@Url.Action("GetAllProperty", "Property")" class="btn btn-primary">Go Back</a>
+                    </div>
+                }
+                else
+                {
+                    <div class="card-footer2">
+                        <a href="@Url.Action("SuperAdminDashBord", "User")" class="btn btn-primary">Go Back</a>
+                    </div>
+                }
+        }  
+    </div>
+        <script>
+            document.getElementById('toggleBtn').addEventListener('click', function () {
+                var sidebar = document.getElementById('sidebar');
+                var mainContent = document.getElementById('mainContent');
+                if (sidebar.classList.contains('collapsed')) {
+                    sidebar.classList.remove('collapsed');
+                    sidebar.classList.add('expanded');
+                    mainContent.classList.add('expanded');
+                    this.textContent = '-';
+                } else {
+                    sidebar.classList.remove('expanded');
+                    sidebar.classList.add('collapsed');
+                    mainContent.classList.remove('expanded');
+                    this.textContent = '+';
+                }
+            });
+
+            // Bootstrap Carousel initialization (if needed)
+            var myCarousel = document.querySelector('#propertyCarousel');
+            var carousel = new bootstrap.Carousel(myCarousel, {
+                interval: 3000, // 3 seconds
+                ride: 'carousel'
+            });
+        </script>
+</body>
+</html>
+}

@@ -1,0 +1,370 @@
+﻿@* 
+<div class="Master1">
+    <link href="~/css/dash.css" rel="stylesheet" />
+    <div class="Child1">
+        <img src="~/Logo1.jpg" alt="Alternate Text" class="small-image" />
+        <div class="Child1-2">
+            <h3 class="Me">TJ HOMELAND AND ASSOCIATES LTD </h3>
+        </div>
+    </div>
+    <div class="Child2">
+        <h4>Welcome, To Our Web Application</h4>
+        <h2>Manage Your Property</h2>
+        <p>
+            you will have evrything nearby supermarket, buses, stations, cinemas <br>
+            theatres, the Carmen neighbourhood, etc.
+        </p>
+    </div>
+    <div class="Child3">
+        <form action="/search" method="get" class="search-form">
+            <button type="submit" asp-controller="Property" asp-action="GetPropertyByDescription" class="search-button">Search</button>
+            <input type="text" name="query" placeholder="Find a property by your description" class="search-input" required>
+        </form>
+
+    </div>
+
+    <div class="property-container">
+        <div class="property-card">
+            <img src="~/Property1.jpg" alt="Sobha Heartland || Villas">
+            <div class="property-details">
+                <h3>Sobha Heartland || Villas</h3>
+                <p>4 Bedroom Villa for Rent in Al Barsha 1 Villas, Al Barsha 1, Al Barsha.</p>
+                <div class="property-meta">
+                    <span class="rating">4.83</span>
+                    <span class="price">$189 / Night</span>
+                </div>
+                <button class="book-now">Book Now</button>
+            </div>
+        </div>
+        <div class="property-card">
+            <img src="~/Property2.jpg" alt="MyKonos Damac Lagoons">
+            <div class="property-details">
+                <h3>MyKonos Damac Lagoons</h3>
+                <p>2 Bedroom Apartment for Rent in Balqis Residence, Palm Jumeirah.</p>
+                <div class="property-meta">
+                    <span class="rating">4.67</span>
+                    <span class="price">$560 / Night</span>
+                </div>
+                <button class="book-now">Book Now</button>
+            </div>
+        </div>
+        <div class="property-card">
+            <img src="~/Property3.jpg" alt="Verdana 2 Residence">
+            <div class="property-details">
+                <h3>Verdana 2 Residence</h3>
+                <p>1 Bedroom Apartment for Rent in Continental Tower, Dubai Marina.</p>
+                <div class="property-meta">
+                    <span class="rating">4.45</span>
+                    <span class="price">$231 / Night</span>
+                </div>
+                <button class="book-now">Book Now</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+@* <div class="pol">
+    <img src="~/Property4.jpg" alt="Alternate Text" style="height:250px;width: 200px; position: absolute; margin-left:1200px;margin-bottom:1000px" />
+</div> *@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Your Property</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .header .logo img {
+                height: 40px;
+            }
+
+
+            .navbar a {
+                margin: 0 20px;
+                color: #333;
+                text-decoration: none;
+                font-weight: 500;
+            }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            margin: 0 20px;
+        }
+
+            .search-box input {
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 20px 0 0 20px;
+                outline: none;
+            }
+
+            .search-box button {
+                padding: 8px 15px;
+                border: 1px solid #ccc;
+                border-left: none;
+                background-color: #fff;
+                border-radius: 0 20px 20px 0;
+                cursor: pointer;
+            }
+
+        .dropdown button {
+            background-color: #fff;
+            border: none;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .list-property {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .hero {
+            border-radius : 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 40px;
+            background: linear-gradient(to left,#c7dfe7, #fad9ba);
+            margin-bottom: 30px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        .hero-text h2 {
+            font-size: 24px;
+            color: #777;
+        }
+
+        .hero-text p {
+            color: #555;
+            max-width: 400px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+        }
+
+        .toggle-section {
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .toggle-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 34px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 20px;
+        }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 12px;
+                width: 12px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                transition: .4s;
+                border-radius: 50%;
+            }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+            input:checked + .slider:before {
+                transform: translateX(14px);
+            }
+
+        .price-info {
+            color: #777;
+        }
+
+        .properties {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+
+        .property-card {
+            background-color: #fff;
+            width: 30%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+            .property-card img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+            }
+
+        .property-info {
+            padding: 20px;
+        }
+
+            .property-info h3 {
+                font-size: 20px;
+                font-weight: 600;
+                margin: 10px 0;
+            }
+
+            .property-info p {
+                font-size: 14px;
+                color: #555;
+                margin: 10px 0;
+            }
+
+        .property-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .property-meta span {
+                font-size: 18px;
+                font-weight: 600;
+                color: #333;
+            }
+
+            .property-meta button {
+                padding: 10px 20px;
+                background-color: #007BFF;
+                color: #fff;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+    </style>
+  
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Welcome to Crypto Market</h2>
+            <h1>Shop With Your Various Crypto Currencies</h1>
+            <p>"Shop Smarter, Live Better – Your One-Stop Shop for Everything You Love!" paying with crypto curencies</p>
+        </div>
+        <div class="hero-image">
+            <img src="~/grandma.jpg" alt="Modern House" >
+        </div>
+    </section>
+
+    <section class="toggle-section">
+        <div class="toggle-wrapper">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <p>Display Total Price</p>
+        </div>
+        <p class="price-info">Includes all fees, before taxes...</p>
+    </section>
+
+    <section class="properties">
+        <div class="property-card">
+            <img src="~/cloth.jpg" alt="Louis Vuitton Cloth">
+            <div class="property-info">
+                <h3>Louis Vuitton Cloth</h3>
+                <p>Best Cloth of the year 2024</p>
+                <div class="property-meta">
+                    <span>$189 </span>
+                    <a asp-controller="User" asp-action="Login">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <img src="~/shoe.jpg" alt="NIKE Sneakers">
+            <div class="property-info">
+                <h3>NIKE Sneakers</h3>
+                <p>Most expensive foot wear</p>
+                <div class="property-meta">
+                    <span>$560 </span>
+                    <a asp-controller="User" asp-action="Login">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <img src="~/watch (1).jpg" alt="Smart Watch">
+            <div class="property-info">
+                <h3>Smart Watch</h3>
+                <p>Smart Watch water resistanse,dust prove and many more</p>
+                <div class="property-meta">
+                    <span>$231 </span>
+                    <a asp-controller="User" asp-action="Login"> Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,85 @@
+﻿@using RealEstate_Mvc_.Dtos
+
+
+@model ProductResponseModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Details</title>
+    <style>
+        .property-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .property-images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+            .property-images img {
+                width: 300px;
+                height: 200px;
+                object-fit: cover;
+                margin: 10px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+        .property-buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+            .property-buttons button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+        .grab-button {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .back-button {
+            background-color: #007bff;
+            color: white;
+        }
+
+            .grab-button:hover, .back-button:hover {
+                opacity: 0.8;
+            }
+    </style>
+</head>
+<body>
+    <div class="property-details">
+        <p class="card-text">@Model.Description</p>
+        <p class="card-text"><strong>Price:</strong> @Model.Price</p>
+        <p class="card-text"><strong>Category:</strong> @Model.CategoryName<p>
+        <p class="card-text"><strong>Available:</strong> @Model.IsAvailable</p>
+        <div class="property-images">
+            @foreach (var image in Model.Images)
+            {
+                <img src="~/properties/@image" class="d-block w-100" alt="Property Image" style="height: 200px; object-fit: cover;">
+            }
+        </div> 
+
+      @*   <div class="property-buttons">
+
+            <a href="@Url.Action("createTransfer", "Transaction", new TransactionRequestModel {Email=@Model.CurrentUser })    " class="btn btn-success">Grab Your Property</a>
+            <button type="button" class="back-button" onclick="window.history.back();">Go Back</button>
+        </div>  *@
+    @* </div> *@
+</body>
+</html>

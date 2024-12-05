@@ -1,0 +1,126 @@
+﻿.Master1 {
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    gap: 25px;
+   
+}
+
+.Child1 {
+    flex: 0 0 4%;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: row;
+    gap: 10px;
+    height: 30px;  Adjust this value as needed 
+}
+
+
+.Child1-1 {
+    width: 200px;  Set a fixed width 
+    height: 50px;
+}
+.small-image {
+    width: 100px;  Width in pixels 
+    height: auto;  Maintain aspect ratio 
+}
+
+.Child1-2 {
+    font-family: 'Indie Flower', cursive;
+}
+
+.Child2 h4 {
+    margin-top: 12px;
+    font-size: medium;
+}
+
+.Child2 h2 {
+    margin-top: 5px;
+    font-size: 40px;
+}
+
+.Child2 p {
+    font-size: smaller;
+    margin-top: 3px;
+}
+
+.Child2 {
+    flex: 0 0 50%;
+    display: flex;
+    gap: 10px;
+    border-radius: 20px;
+    flex-direction: column;
+    background: linear-gradient(to left,#c7dfe7, #fad9ba);
+    padding: 1%;
+    height: 600px; 
+    display: inline;  
+}
+
+
+.Child3 {
+    flex: 0 0 10%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 70px;
+    width: 30%;
+    align-self: flex-start;
+    justify-content: center;
+    height: 100%;
+}
+
+.child4 {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    border-radius: 20px;
+    flex-direction: row;
+}
+
+
+
+
+.search-input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    font-size: 1.2rem;  Bigger font size 
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    outline: none;
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;  Bigger font size 
+    border: none;
+    border-radius: 10px;
+    background-color: #95b6d9;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+    .search-button:hover {
+        background-color: #0056b3;
+    }
+
+.search-form {
+   display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);  Transparent background 
+    padding: 10px;
+    border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pol{
+    height: 300px;
+    width: 250px;
+    position: absolute;
+}
+
+
+
+
+

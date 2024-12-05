@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@using RealEstate_Mvc_.Dtos
+
+@model IEnumerable<CustomerResponseModel>
+
+@{
+    ViewBag.Title = "All Customers";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Customer List</h2>
+    <div class="row">
+        @foreach (var customer in Model)
+        {
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="@customer.ProfilePicture" class="card-img-top img-fluid" alt="@customer.ProfilePicture" />
+                    <div class="card-body">
+                        <h5 class="card-title">@customer.FirstName</h5>
+                        <h5 class="card-title">@customer.LastName</h5>
+                        <p class="card-text">@customer.Email</p>
+                        <p class="card-text">@customer.Gender</p>
+                        <p class="card-text">@customer.Address</p>
+                        <p class="card-text">@customer.PhoneNumber</p>
+                        <p class="card-text">@customer.Age</p>
+                        <p class="card-text">@customer.Wallet</p>
+                        <p class="card-text"><small class="text-muted">Joined on @customer..ToString("MMMM dd, yyyy")</small></p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

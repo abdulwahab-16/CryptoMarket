@@ -1,0 +1,127 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using RealEstate_Mvc_.Dtos
+
+@model UserRequestModel
+
+
+@{
+    ViewBag.Title = "Create User";
+    
+}
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Message
+    </div>
+}
+
+<h2 class="text-center">Create User</h2>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-body">
+                    <form asp-action="CreateUser" asp-controller="User" method="post" id="createUserForm">
+                            <!-- Form fields here -->
+                            
+
+                      @*   <div class="form-group">
+                            <label asp-for="Staff.FirstName"></label>
+                            <input asp-for="Staff.FirstName" class="form-control" />
+                            <span asp-validation-for="Staff.FirstName" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Staff.LastName"></label>
+                            <input asp-for="Staff.LastName" class="form-control" />
+                            <span asp-validation-for="Staff.LastName" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Staff.Age"></label>
+                            <input asp-for="Staff.Age" class="form-control" />
+                            <span asp-validation-for="Staff.Age" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Staff.Address"></label>
+                            <input asp-for="Staff.Address" class="form-control" />
+                            <span asp-validation-for="Staff.Address" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Staff.Gender"></label>
+                            <select asp-for="Staff.Gender" class="form-control">
+                                <option value="">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                            <span asp-validation-for="Staff.Gender" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Staff.RoleName"></label>
+                            <input asp-for="Staff.RoleName" class="form-control" />
+                            <span asp-validation-for="Staff.RoleName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Staff.RoleDescription"></label>
+                            <input asp-for="Staff.RoleDescription" class="form-control" />
+                            <span asp-validation-for="Staff.RoleDescription" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Staff.ProfilePicture"></label>
+                            <input asp-for="Staff.ProfilePicture" type="file" class="form-control" />
+                            <span asp-validation-for="Staff.ProfilePicture" class="text-danger"></span>
+                        </div>
+                       *@  <div class="form-group">
+                            <label asp-for="Email"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Password"></label>
+                            <input asp-for="Password" type="password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="ConfirmPassword"></label>
+                            <input asp-for="ConfirmPassword" type="password" class="form-control" />
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="RoleName"></label>
+                            <input asp-for="RoleName" class="form-control" />
+                            <span asp-validation-for="RoleName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="RoleDescription"></label>
+                            <input asp-for="RoleDescription" class="form-control" />
+                            <span asp-validation-for="RoleDescription" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="FullName"></label>
+                            <input asp-for="FullName" class="form-control" />
+                            <span asp-validation-for="FullName" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <button type="submit" asp-action="CreateUser" asp-controller="User" class="btn btn-primary btn-block">Create User</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

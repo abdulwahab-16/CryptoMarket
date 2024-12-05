@@ -1,0 +1,108 @@
+﻿@using RealEstate_Mvc_.Dtos
+@using System.Security.Claims
+
+ @model TransactionResponseModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+
+    <style>
+        .receipt-container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .receipt-header h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 10px;
+        }
+
+        .receipt-body p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .receipt-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .save-button, .go-back-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+            .save-button:hover, .go-back-button:hover {
+                background-color: #45a049;
+            }
+
+        .go-back-button {
+            background-color: #f44336;
+        }
+
+            .go-back-button:hover {
+                background-color: #e53935;
+            }
+    </style>
+</head>
+<body>
+    <div class="receipt-container" id="receipt">
+
+    <div class="receipt-header">
+        <h1>Receipt</h1>
+    </div>
+        <div class="receipt-body">
+
+            <p><strong>RefNumber:</strong>@Model?.RefNumber</p>
+            <p><strong>IsSuccessful:</strong>@Model?.IsSucessfull</p>
+            <p><strong>Customer Email:</strong>@Model?.Email</p>
+            <p><strong>Price:</strong>@Model?.Price</p>
+
+            </div>
+        <div class="receipt-footer">
+            <button id="save-as-image" class="save-button">Save as Image</button>
+            @if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value == "Customer")
+            {
+                <a href="@Url.Action("GetAllProduct", "Product")" class="go-back-button">Go Back</a>
+            }
+            else
+            {
+                <a href="@Url.Action("SuperAdminDashBord", "User")" class="go-back-button">Go Back</a>
+            }
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <script>
+        document.getElementById('save-as-image').addEventListener('click', function () {
+            html2canvas(document.getElementById('receipt')).then(function (canvas) {
+                var link = document.createElement('a');
+                link.href = canvas.toDataURL('image/png');
+                link.download = 'receipt.png';
+                link.click();
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+          

@@ -1,0 +1,69 @@
+﻿@using System.Security.Claims
+
+
+@{
+    ViewData["Title"] = "Search Category by Name";
+}
+
+<div class="container mt-5">
+    <h2>@ViewData["Title"]</h2>
+    <form asp-action="GetByName" method="get">
+        <div class="form-group">
+            <label for="categoryName">Enter Category Name:</label>
+            <input type="text" class="form-control" id="categoryName" name="Name" placeholder="Enter category name" required>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Search</button>
+    </form>
+
+    @if (!string.IsNullOrEmpty(ViewBag.Message))
+    {
+        <div class="alert alert-info mt-3">
+            @ViewBag.Message
+        </div>
+    }
+
+    @if (Model != null)
+    {
+        <div class="mt-4">
+            <h3>Category Details</h3>
+            <p><strong>Name:</strong> @Model.Name</p>
+            <p><strong>Description:</strong> @Model.Description </p>
+            <h3>Properties</h3>
+            @foreach (var property in Model.properties)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+
+
+                       
+
+                        <div class="card-body">
+                            <h5 class="card-title">@property.Location</h5>
+                            <p class="card-text">@property.Description</p>
+                            <p class="card-text"><strong>Price:</strong> @property.Price</p>
+                            <p class="card-text"><strong>Location:</strong> @property.Location</p>
+                            <p class="card-text"><strong>Category:</strong> @property.CategoryName<p>
+                            <p class="card-text"><strong>Type:</strong> @property.TypeOfLeases</p>
+                            <p class="card-text"><strong>Available:</strong> @property.IsAvailable</p>
+                            <p class="card-text"><strong>Owner Email:</strong> @property.OwnerEmail</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+
+    @if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value == "Customer")
+    {
+        <div class="card-footer2">
+            <a href="@Url.Action("GetAllProperty", "Property")" class="btn btn-primary">Go Back</a>
+        </div>
+    }
+    else
+    {
+        <div class="card-footer2">
+            <a href="@Url.Action("SuperAdminDashBord", "User")" class="btn btn-primary">Go Back</a>
+        </div>
+    }
+</div>

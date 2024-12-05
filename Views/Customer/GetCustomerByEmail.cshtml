@@ -1,0 +1,92 @@
+﻿@using RealEstate_Mvc_.Dtos
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+@model CustomerResponseModel
+
+@{
+    ViewBag.Title = "Customer Details";
+}
+<h2>@ViewData["Title"]</h2>
+<style>
+    /* Customer Details Card Styles */
+    .customer-details {
+        background-color: #f8f9fa; /* Light background for contrast */
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 400px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+        .customer-details .card-img-top {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .customer-details h5.card-title {
+            font-family: 'Arial', sans-serif;
+            color: #343a40;
+            font-weight: bold;
+        }
+
+        .customer-details p.card-text {
+            font-family: 'Arial', sans-serif;
+            color: #6c757d;
+            margin-bottom: 5px;
+        }
+
+        .customer-details .btn-primary {
+            background-color: #007bff;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+            .customer-details .btn-primary:hover {
+                background-color: #0056b3;
+            }
+
+            .customer-details .btn-primary:focus {
+                outline: none;
+                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+            }
+
+</style>
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-info">
+        @ViewBag.Message
+    </div>
+}
+else
+{
+
+    
+    
+    <img src="~/properties/@Model.ProfilePicture" class="d-block w-100" alt="Property Image" style="height: 200px; object-fit: cover;">
+
+    <div class="customer-details">
+        <h5 class="card-title"> FirstName :@Model.FirstName</h5>
+        <h5 class="card-title"> LastName :@Model.LastName</h5>
+        <p class="card-text"> Email :@Model.Email</p>
+        <p class="card-text"> Gender :@Model.Gender</p>
+        <p class="card-text"> Address :@Model.Address</p>
+        <p class="card-text"> PhoneNumber :@Model.PhoneNumber</p>
+        <p class="card-text"> Age :@Model.Age</p>
+        <p class="card-text"> Wallet :@Model.Wallet</p>
+    </div>
+    <a href="@Url.Action("GetAllPrduct", "Product")" class="btn btn-primary">Go Back</a>
+}

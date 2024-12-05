@@ -1,0 +1,440 @@
+﻿@using System.Security.Claims
+@using RealEstateMvc.Models.Enum
+@using RealEstate_Mvc_.Dtos
+@model List<ProductResponseModel>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            height: 100%;
+        }
+
+
+
+
+        .nav-link {
+            display: flex;
+            padding: .5rem 1rem;
+            flex-direction:row;
+            display: contents;
+        }
+
+        *, ::after, ::before {
+            box-sizing: content-box; 
+        }
+
+        .table td, .table th {
+            padding: .35rem;
+             vertical-align: none; 
+            border-top: none; 
+        }
+
+
+
+
+
+
+
+
+        nav .navbar-nav .nav-link {
+            padding-right: 30px;
+            padding-left: 10px;
+            display: contents;
+            height: 5vh;
+        }
+
+        .custom-navbar {
+                    display: contents;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #343a40;
+            color: white;
+            padding: 10px 20px;
+            border-bottom: 2px solid #ccc;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        .container {
+            height: 100vh;
+            flex:1;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #343a40;
+            color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            position: fixed;
+            top: 110px; /* Adjust this value to match the height of your header */
+            left: 0;
+            bottom: 0;
+            z-index: 100;
+            overflow:auto;
+        }
+
+
+
+       /*  nav.custom-navbar {
+            height: 10vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #343a40;
+            color: white;
+            padding: 10px 20px;
+            border-bottom: 2px solid #ccc;
+        } */
+            .sidebar h1 {
+                margin: 0 0 20px;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .sidebar a {
+                display: block;
+                padding: 10px;
+                color: #ddd;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+                .sidebar a:hover, .sidebar a:focus {
+                    background-color: #495057;
+                    color: #fff;
+                }
+
+        .main-content {
+            margin-left: 220px; 
+            box-sizing: border-box;
+            flex: 1; /* Takes up remaining space */
+            height: calc(100vh - 60px); /* Adjust based on header height */
+        }
+
+        .header {
+            background-color: #ffffff;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+            .header h2 {
+                margin: 0;
+                font-size: 1.75rem;
+                color: #333;
+            }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+            .card h3 {
+                font-size: 1.25rem;
+                margin-bottom: 15px;
+            }
+
+        .table th, .table td {
+            text-align: center;
+        }
+
+        .table th {
+            background-color: #f8f9fa;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            border: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn-success:hover {
+                background-color: #218838;
+            }
+
+        .alert {
+            margin-bottom: 20px;
+            border-radius: 5px;
+            padding: 15px;
+            font-size: 1rem;
+        }
+
+        .alert-success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .alert-danger {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - 250px); /* Sidebar width */
+            left: 250px; /* Sidebar width */
+        }
+         .navbar
+        {
+            display: contents;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h1>Logo</h1>
+
+            @if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value == "Owner")
+            {
+                <li style="list-style: none">
+                    <a asp-controller="Category" asp-action="CreateCategory">Create Category</a>
+                    <a asp-controller="Category" asp-action="GetAllCartegory">Get All Categories</a>
+                    <a asp-controller="Category" asp-action="GetByName">Get Category By Name</a>
+                    <a asp-controller="Category" asp-action="GetById">Get Category By ID</a>
+                    <a asp-controller="Owner" asp-action="Update">Update Profile</a>
+                    <a asp-controller="Property" asp-action="CreateProperty">CreateProperty</a>
+                    <a asp-controller="Property" asp-action="GetAllProperty">Get All Property</a>
+                    <a asp-controller="Property" asp-action="GetByOwnerId">GetByOwnerId</a>
+                    <a asp-controller="Property" asp-action="GetPropertyByLocation">Get Property By Location</a>
+                    <a asp-controller="Property" asp-action="GetPropertyById">GetPropertyById</a>
+                    <a asp-controller="Property" asp-action="GetPropertyByTypeOfLeases">GetPropertyByTypeOfLeases</a>
+                    <a asp-controller="Property" asp-action="GetPropertyByPrice">GetPropertyByPrice</a>
+                    <a asp-controller="Property" asp-action="GetPropertyByCategoryId">Get Property By Category ID</a>
+                    <a asp-controller="Property" asp-action="GetByAvailability">Get By Availability</a>
+                    <a asp-controller="Property" asp-action="GetPropertyByDescription">GetPropertyByDescription</a>
+                    <a asp-controller="Property" asp-action="UpdateProperty">UpdateProperty</a>
+                </li>
+            }
+            @if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value == "Staff")
+            {
+                <li style="list-style: none">
+                    <a asp-controller="Category" asp-action="GetAllCartegory">Get All Categories</a>
+                    <a asp-controller="Category" asp-action="GetByName">Get Category By Name</a>
+                    <a asp-controller="Category" asp-action="GetById">Get Category By ID</a>
+                    <a asp-controller="Staff" asp-action="Update">Update Profile</a>
+                    <a asp-controller="Property" asp-action="GetAllProperty">Get All Property</a>
+                    <a asp-controller="Property" asp-action="GetPropertyByLocation">Get Property By Location</a>
+                    <a asp-controller="Property" asp-action="GetPropertyByTypeOfLeases">GetPropertyByTypeOfLeases</a>
+                    <a asp-controller="Property" asp-action="GetPropertyByPrice">GetPropertyByPrice</a>
+                    <a asp-controller="Property" asp-action="GetPropertyByCategoryId">Get Property By Category ID</a>
+                    <a asp-controller="Property" asp-action="GetByAvailability">Get By Availability</a>
+                    <a asp-controller="Property" asp-action="GetPropertyByDescription">GetPropertyByDescription</a>
+                </li>
+            }
+            @if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value == "Superadmin")
+            {
+                <li style="list-style: none">
+                    <a asp-controller="Category" asp-action="CreateCategory">Create Category</a>
+                    <a asp-controller="Category" asp-action="Delete">Delete Category</a>
+                    <a asp-controller="Category" asp-action="GetAllCartegory">Get All Categories</a>
+                    <a asp-controller="Category" asp-action="GetByName">Get Category By Name</a>
+                    <a asp-controller="Category" asp-action="GetById">Get Category By ID</a>
+                    <a asp-controller="Category" asp-action="Update">Update Category </a>
+                    <a asp-controller="Customer" asp-action="GetAllCustomer">Get All Customers</a>
+                    <a asp-controller="Customer" asp-action="GetCustomerById">Get Customer By ID</a>
+                    <a asp-controller="Customer" asp-action="CreateCustomer">CreateCustomer</a>
+                    <a asp-controller="Customer" asp-action="DeleteCustomer">DeleteCustomer</a>
+                    <a asp-controller="Customer" asp-action="GetCustomerByEmail">GetCustomerByEmail</a>
+                    <a asp-controller="Customer" asp-action="UpdateCustomer">UpdateCustomer</a>
+                    <a asp-controller="Product" asp-action="CreateProduct">CreateProduct</a>
+                    <a asp-controller="Product" asp-action="GetAllproduct">Get All Product</a>
+                    <a asp-controller="Product" asp-action="GetByOwnerId">GetByOwnerId</a>
+                    <a asp-controller="Product" asp-action="GetPropertyByLocation">Get Property By Location</a>
+                    <a asp-controller="Product" asp-action="GetPropertyById">GetPropertyById</a>
+                    <a asp-controller="Product" asp-action="GetPropertyByTypeOfLeases">GetPropertyByTypeOfLeases</a>
+                    <a asp-controller="Product" asp-action="GetPropertyByPrice">GetPropertyByPrice</a>
+                    <a asp-controller="Product" asp-action="GetPropertyByCategoryId">Get Property By Category ID</a>
+                    <a asp-controller="Property" asp-action="GetByAvailability">Get By Availability</a>
+                    <a asp-controller="Property" asp-action="GetPropertyByDescription">GetPropertyByDescription</a>
+                    <a asp-controller="Property" asp-action="UpdateProperty">UpdateProperty</a>
+                    <a asp-controller="Property" asp-action="DeleteProperty">DeleteProperty</a>
+                    <a asp-controller="Role" asp-action="CreateRole">Create Role</a>
+                    <a asp-controller="Role" asp-action="DeleteRole">DeleteRole</a>
+                    <a asp-controller="Role" asp-action="GetRoleByName">GetRoleByName</a>
+                    <a asp-controller="Role" asp-action="UpdateRole">UpdateRole</a>
+                    <a asp-controller="Role" asp-action="GetAllRole">Get All Roles</a>
+                    <a href="#" data-toggle="modal" data-target="#createStaffModal">Create Staff</a>
+                    <a asp-controller="Staff" asp-action="Delete">Delete Staff</a>
+                    <a asp-controller="Staff" asp-action="GetAllStaff">Get All Staff</a>
+                    <a asp-controller="Staff" asp-action="GetById">Get Staff By ID</a>
+                    <a asp-controller="Staff" asp-action="GetByEmail">GetByEmail</a>
+                    <a asp-controller="Staff" asp-action="GetByStaffNumber">Get By Staff Number</a>
+                    <a asp-controller="Staff" asp-action="Update">Update</a>
+                    <a asp-controller="Transaction" asp-action="CreateTransfer">Create Transfer</a>
+                    <a asp-controller="Transaction" asp-action="DeleteTransfer">DeleteTransfer</a>
+                    <a asp-controller="Transaction" asp-action="GetTransferByPropertyId">GetTransferByPropertyId</a>
+                    <a asp-controller="Transaction" asp-action="GetAllTransfer">Get All Transfer</a>
+                    <a asp-controller="Transaction" asp-action="GetByCustomerId">Get By Customer ID</a>
+                    <a asp-controller="Transaction" asp-action="GetTransferByEmail">GetTransferByEmail</a>
+                    <a asp-controller="Transaction" asp-action="GetTransferByRefNumber">Get Transfer By Ref Number</a>
+                    <a asp-controller="Transaction" asp-action="UpdateTransfer">UpdateTransfer</a>
+                    <a asp-controller="User" asp-action="CreateUser">Create User</a>
+                    <a asp-controller="User" asp-action="UpdateUser">UpdateUser</a>
+                    <a asp-controller="User" asp-action="GetAllUser">Get All Users</a>
+                    <a asp-controller="User" asp-action="DeleteUser">DeleteUser</a>
+                    <a asp-controller="User" asp-action="GetByRoleId">GetByRoleId</a>
+                    <a asp-controller="User" asp-action="GetUserByEmail">GetUserByEmail</a>
+                </li>
+            }
+            @if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value == "Manager")
+            {
+                <li style="list-style: none">
+                    <a asp-controller="Category" asp-action="CreateCategory">Create Category</a>
+                    <a asp-controller="Category" asp-action="Delete">Delete Category</a>
+                    <a asp-controller="Category" asp-action="GetAllCartegory">Get All Categories</a>
+                    <a asp-controller="Category" asp-action="GetByName">Get Category By Name</a>
+                    <a asp-controller="Category" asp-action="GetById">Get Category By ID</a>
+                    <a asp-controller="Category" asp-action="Update">Update Category </a>
+                    <a asp-controller="Customer" asp-action="GetAllCustomer">Get All Customers</a>
+                    <a asp-controller="Customer" asp-action="GetCustomerById">Get Customer By ID</a>
+                    <a asp-controller="Customer" asp-action="GetCustomerByEmail">GetCustomerByEmail</a>
+                    <a asp-controller="Owner" asp-action="CreateOwner">Create Owner</a>
+                    <a asp-controller="Owner" asp-action="GetAllOwner">All Owners</a>
+                    <a asp-controller="Owner" asp-action="GetByStaffId">Get By Staff ID</a>
+                    <a asp-controller="Owner" asp-action="GetById">Get By ID</a>
+                    <a asp-controller="Owner" asp-action="GetByEmail">GetByEmail</a>
+                    <a asp-controller="Property" asp-action="CreateProperty">CreateProperty</a>
+                    <a asp-controller="Property" asp-action="GetAllProperty">Get All Property</a>
+                    <a asp-controller="Property" asp-action="GetByOwnerId">GetByOwnerId</a>
+                    <a asp-controller="Property" asp-action="GetPropertyByLocation">Get Property By Location</a>
+                    <a asp-controller="Property" asp-action="GetPropertyById">GetPropertyById</a>
+                    <a asp-controller="Property" asp-action="GetPropertyByTypeOfLeases">GetPropertyByTypeOfLeases</a>
+                    <a asp-controller="Property" asp-action="GetPropertyByPrice">GetPropertyByPrice</a>
+                    <a asp-controller="Property" asp-action="GetPropertyByCategoryId">Get Property By Category ID</a>
+                    <a asp-controller="Property" asp-action="GetByAvailability">Get By Availability</a>
+                    <a asp-controller="Property" asp-action="GetPropertyByDescription">GetPropertyByDescription</a>
+                    <a asp-controller="Role" asp-action="CreateRole">Create Role</a>
+                    <a asp-controller="Role" asp-action="GetRoleByName">GetRoleByName</a>
+                    <a asp-controller="Role" asp-action="GetAllRole">Get All Roles</a>
+                    <a asp-controller="Staff" asp-action="CreateStaff">Create Staff</a>
+                    <a asp-controller="Staff" asp-action="GetAllStaff">Get All Staff</a>
+                    <a asp-controller="Staff" asp-action="GetById">Get Staff By ID</a>
+                    <a asp-controller="Staff" asp-action="GetByEmail">GetByEmail</a>
+                    <a asp-controller="Staff" asp-action="GetByStaffNumber">Get By Staff Number</a>
+                    <a asp-controller="Staff" asp-action="Update">Update profile</a>
+                    <a asp-controller="Transaction" asp-action="GetTransferByPropertyId">GetTransferByPropertyId</a>
+                    <a asp-controller="Transaction" asp-action="GetAllTransfer">Get All Transfer</a>
+                    <a asp-controller="Transaction" asp-action="GetByCustomerId">Get By Customer ID</a>
+                    <a asp-controller="Transaction" asp-action="GetTransferByEmail">GetTransferByEmail</a>
+                    <a asp-controller="Transaction" asp-action="GetTransferByRefNumber">Get Transfer By Ref Number</a>
+                    <a asp-controller="Transaction" asp-action="UpdateTransfer">UpdateTransfer</a>
+                    <a asp-controller="User" asp-action="CreateUser">Create User</a>
+                    <a asp-controller="User" asp-action="GetAllUser">Get All Users</a>
+                    <a asp-controller="User" asp-action="GetByRoleId">GetByRoleId</a>
+                    <a asp-controller="User" asp-action="GetUserByEmail">GetUserByEmail</a>
+                </li>
+            }
+           
+           
+        </nav>
+
+        <div class="main-content">
+            @if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value == "Customer")
+            {
+                <header class="header">
+                    <h2>Hello, Customer</h2>
+                </header>
+            }
+              @if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value == "Owner")
+            {
+                <header class="header">
+                    <h2>Hello, Seller</h2>
+                </header>
+            }
+            @if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value == "Superadmin")
+            {
+                <div class="container">
+                <header class="header">
+                    <h2>Hello, SuperAdmin</h2>
+                </header>
+           
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    
+                  
+                 
+
+                 </div>
+
+            }
+              @if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value == "Manager")
+            {
+                <div class="container">
+                <header class="header">
+                    <h2>Hello, Manager</h2>
+                </header>
+                
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                   
+                    <link rel="stylesheet" href="~/css/styles.css">
+                    <div>
+                       
+                    </div>
+                </div>
+            }
+            @if (User.FindFirst(ClaimTypes.Role) != null && User.FindFirst(ClaimTypes.Role).Value == "Staff")
+            {
+                <header class="header">
+                    <h2>Hello, Staff</h2>
+                </header>
+            }
+        
+
+         
+               
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function redirectToCreateUser() {
+            window.location.href = '@Url.Action("createUser", "User")';
+        }
+
+        function redirectToCreateStaff() {
+            window.location.href = '@Url.Action("createStaff", "Staff")';
+        }
+    </script>
+</body>
+</html>
+   
